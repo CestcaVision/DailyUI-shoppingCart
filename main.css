@@ -1,0 +1,146 @@
+body {
+  background: #999999;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg_overlay {
+  width:120%;
+  height: 400px;
+  background:#333333;
+  transform: rotate(-5deg);
+  position: absolute;
+  top: -70px;
+  left:-70px
+}
+.cart_container {
+  position: absolute;
+  width:80%;
+  height:90%;
+  left:10%;
+  top: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item_img{
+  background: #fff;
+  width:40%;
+  height:100%;
+  box-shadow: 3px 3px 2px #666666;
+  background: url('https://dl.dropboxusercontent.com/s/anvrsmhpcs6fl6c/T60751001_050_back.jpg?dl=0');
+  background-size: cover;
+  background-position: -55px;
+  z-index:10
+}
+.item_info{
+  min-height: 300px;
+  background: #fff;
+  width:60%;
+  height:80%;
+  /*padding:50px 70px 50px 20px*/
+
+}
+.item_list {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 70px 50px 20px
+}
+.brand {
+  color: #222222;
+  font-size: 1em;
+}
+.name {
+  color: black;
+  font-size: 2em;
+  margin-top: 5px;
+}
+.material {
+  color:#666;
+  font-size:1.2em;
+  margin-top: 5px;
+}
+.desc {
+  margin-top:15px;
+  line-height: 1.2em
+}
+.item_picker {
+  display: flex;
+  flex-direction: row;
+}
+.color_picker{
+  display:flex;
+  flex-direction: column;
+  margin-top: 20px
+}
+.size_picker{
+  display:flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.color_label, .size_label {
+  font-size: 15px;
+}
+.color_switch, .size_switch{
+  display:flex;
+  flex-direction: row;
+  margin-top: 10px
+}
+.color_desc,.size_desc {
+  margin-top: 10px;
+  font-size: 5px;
+}
+.blue {
+  margin-left: 20px;
+  width:30px;
+  height:30px;
+  background: #425578;
+  border: 1px solid white;
+  outline: 2px solid #cccccc
+}
+.black {
+  width:30px;
+  height:30px;
+  background: #333333;
+  border: 1px solid white;
+  outline: 2px solid #cccccc
+}
+.size_switch div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:30px;
+  height:30px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.size_switch div:first-child {
+  border-left: 1px solid black
+}
+.buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 35px
+}
+.price {
+  font-size: 40px
+}
+.add_to_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  background: #333333;
+  color: white;
+}
+.size_switch div .active {
+  transform: scale(1.2);
+  border-left: 1px solid black;
+  z-index: 2;
+  margin-left: 2px;
+  margin-right: 3px;
+}
